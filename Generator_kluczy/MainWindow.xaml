@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Generator_kluczy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Klucze" Height="469" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <ListView Name="UILista" d:ItemsSource="{d:SampleData ItemCount=5}" Height="387" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Klucz" DisplayMemberBinding="{Binding Klucz}" />
+                    <GridViewColumn Header="Produkt" DisplayMemberBinding="{Binding Produkt}" />
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="nowy" HorizontalAlignment="Left" Margin="10,404,0,0" VerticalAlignment="Top" Width="77" Click="Nowy"/>
+        <Button Content="status" HorizontalAlignment="Left" Margin="133,404,0,0" VerticalAlignment="Top" Width="77" Click="Status"/>
+        <Button Content="produkt" HorizontalAlignment="Left" Margin="215,404,0,0" VerticalAlignment="Top" Width="77" Click="Produkt"/>
+        <Button Content="usuń" HorizontalAlignment="Left" Margin="323,404,0,0" VerticalAlignment="Top" Width="77" Click="Usun"/>
+        <Button Content="usunięte..." HorizontalAlignment="Left" Margin="649,404,0,0" VerticalAlignment="Top" Width="76" Click="Usuniete"/>
     </Grid>
 </Window>
