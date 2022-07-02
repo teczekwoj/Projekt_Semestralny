@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Generator_kluczy
 {
@@ -21,7 +10,8 @@ namespace Generator_kluczy
     {
         public OknoUsunietych(List<Dane> dane)
         {
-            InitializeComponent();
+            UILista.ItemsSource = dane;
+            UILista.Items.Refresh();
         }
     }
 }
