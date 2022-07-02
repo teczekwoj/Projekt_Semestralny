@@ -19,7 +19,7 @@ namespace Generator_kluczy
     /// </summary>
     public partial class OknoUsunietych : Window
     {
-        public OknoUsunietych()
+        public OknoUsunietych(List<Dane> dane)
         {
             InitializeComponent();
         }
