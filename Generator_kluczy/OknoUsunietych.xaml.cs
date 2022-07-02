@@ -10,6 +10,8 @@ namespace Generator_kluczy
     {
         public OknoUsunietych(List<Dane> dane)
         {
+            InitializeComponent();
+
             UILista.ItemsSource = dane;
             UILista.Items.Refresh();
         }
